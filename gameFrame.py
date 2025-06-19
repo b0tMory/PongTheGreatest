@@ -2,7 +2,7 @@ import pygame
 pygame.init()
 #class gameFrame:
 #initializing the pygame interface
-screen = pygame.display.set_mode((900,700))
+screen = pygame.display.set_mode((1000,800))
 pygame.display.set_caption("Pong The Greatest")
 
 #Creating the pattles
@@ -20,7 +20,8 @@ run = True
 score = 0
 
 #Making the font for the title
-textFont = pygame.font.SysFont("gill sans ext condensed",100)
+fontPath = r"C:\Users\morys_txn4i9v\.vscode\projects\PongTheGreatest\PongTheGreatest\bit5x5.ttf"
+textFont = pygame.font.Font(fontPath,70)
 
 #function to make text
 def drawText(text,font,textColor,x,y):
@@ -35,11 +36,9 @@ hoverColor = (100,100,100)
 
 text = textFont.render('quit',True, nonHoverColor)
 
-
-
     
 #Drawing the title and score
-drawText("PONG THE GREATEST",textFont,(250,250,250),220,20)
+drawText("PONG THE GREATEST",textFont,(250,250,250),width - (width - width / 11),20)
 pygame.display.update()
     
 #Code fo the game screen
