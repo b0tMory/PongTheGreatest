@@ -41,19 +41,19 @@ text = textFont.render('quit',True, nonHoverColor)
 drawText("PONG THE GREATEST",textFont,(250,250,250),width - (width - width / 11),20)
 pygame.display.update()
     
-#Code fo the game screen
+#Code for the game screen
 #screen.fill("black")
     #Drawing the title and score
     #drawText("PONG THE GREATEST",textFont,(250,250,250),220,20)
     #The player paddle
-    #padOne = pygame.draw.rect(screen,bColor,pygame.Rect(20,250,20,150),30)
+padOne = pygame.draw.rect(screen,bColor,pygame.Rect(20,height/2.5,20,150),30)
 
     #The Ai paddle
-    #padTwo = pygame.draw.rect(screen,bColor,pygame.Rect(860,250,20,150),30)
+padTwo = pygame.draw.rect(screen,bColor,pygame.Rect(width - 45,height/2.5,20,150),30)
 
     #The ball
-   # ball = pygame.draw.rect(screen,bColor,pygame.Rect(410,330,30,30),20)
-    #pygame.display.flip()
+ball = pygame.draw.rect(screen,bColor,pygame.Rect(width/2.1,height/2,30,30),20)
+pygame.display.flip()
 
 
 
